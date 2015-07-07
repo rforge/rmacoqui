@@ -1,0 +1,9 @@
+Package: RMacoqui
+Type: Package
+Title: Identifying and describing chorotypes based on similarity between species distributions
+Version: 1.0
+Date: 2015-07-04
+Author: Jesus Olivero, Ramon Hidalgo, Ana L. Marquez, A. Marcia Barbosa, Raimundo Real
+Maintainer: Ramon Hidalgo <ramon@uma.es>
+Description: RMacoqui develops a probability procedure for the identification of chorotypes, i.e. distribution patterns shared by a group of species, which can be operatively identified within an area.
+License: GPL-2

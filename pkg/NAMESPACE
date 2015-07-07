@@ -1,0 +1,12 @@
+#funciones que van a poder usar los usuarios
+exportPattern(
+	macoqui, 
+	locCorotGrupos,
+	locCorot, 
+	fuzzy.Clusters, 
+	ver.matRmacoqui)
+
+useDynLib(RMacoqui)
+
+import(tcltk)
+
