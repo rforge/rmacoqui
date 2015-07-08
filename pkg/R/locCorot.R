@@ -4,7 +4,7 @@ function (macoquires) {
      if (macoquires$isprox == 1) stop ("This function is only avalaible if Macoqui was run with presence/absence data ")
 
      ## Esta funcion puede tardar en obtener los resultados.
-     ## Algún tipo de reloj
+
      print ("This process can take some computing time.")
      
      elcor <- macoquires$CorElementos

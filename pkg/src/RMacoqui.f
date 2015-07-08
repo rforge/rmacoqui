@@ -1417,9 +1417,15 @@ C
       ENDDO
 
       END
+
+
+
+
+
 C
 C-----------------------------------------------------------------------------
 C
+
       SUBROUTINE ParametrosMacoqui(listaA, la, listaB, lb,
      c           matrizsignos, NVAR,
      c           pa , pb , pab, na , nb , nab ,
@@ -1473,16 +1479,18 @@ C' Valores referidos a la lista A
             End If
          enddo
       enddo
-      
+
       pa=0
-      na=0
       do i = 1, la
         pa= pa + valorespos(i)
-        na= na + valoresneg(i)
         valorespos(i)=0
-        valoresneg(i)=0
       enddo
 
+      na=0
+      do i = 1, la
+        na= na + valoresneg(i)
+        valoresneg(i)=0
+      enddo
 C
 C Valores referidos a la lista B
 C
@@ -1504,13 +1512,19 @@ C
             End If
          enddo
       enddo
-      
+
+
+C Se hace en dos bucles para evitar Segmentation fault
+
       pb=0
-      nb=0
       do i = 1, lb
         pb= pb + valorespos(i)
-        nb= nb + valoresneg(i)
         valorespos(i)=0
+      enddo
+
+      nb=0
+      do i = 1, lb
+        nb= nb + valoresneg(i)
         valoresneg(i)=0
       enddo
 
@@ -1535,17 +1549,23 @@ C
             End If
          enddo
       enddo
-      
+
       pab=0
-      nab=0
       do i=1, la+lb
          pab=pab+valorespos(i)
-         nab=nab+valoresneg(i)
          valorespos(i)=0
+      enddo
+
+      nab=0
+      do i=1, la+lb
+        nab=nab+valoresneg(i)
          valoresneg(i)=0
       enddo
 
+
+
       End
+
 
 
 C ==========================================================================================================
