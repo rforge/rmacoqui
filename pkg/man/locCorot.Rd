@@ -34,7 +34,7 @@ This function can take some computing time.
 }
 \examples{
 data(amphib)
-macoquires <- macoqui(data)
+macoquires <- macoqui(amphib)
 locs <- locCorot(macoquires) 
 }
 \keyword{}

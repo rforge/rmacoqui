@@ -44,6 +44,9 @@ Real R., Vargas J.M., Guerrero J.C. (1992) Analisis biogeografico de clasificaci
 \seealso{
 }
 \examples{
+
+## EXAMPLE 1: Basic usage of function macoqui
+##
 ## If the data set is a presences/absences matrix:
 
 data(amphib)
@@ -61,21 +64,35 @@ macoquires <- macoqui(simil, nloc=273, isprox=1, vmax=0.553, vmin=0.445)
 ver.matRmacoqui(macoquires)
 
 
-## Parameters for chorotype mapping (only available if 'data' is a presences/absences matrix), and friendly output:
+## EXAMPLE 2: Basic usage of function locCorot
+##
+## Parameters for chorotype mapping (only available if 'data' is a presences/absences matrix), 
+## and friendly output:
 
-macoquires <- locCorot(macoquires) 
-ver.matRmacoqui(macoquires) 
-
-
+data(amphib)
+macoquires <- macoqui(amphib)
+locs <- locCorot(macoquires)
+ver.matRmacoqui(locs)
+ 
+## EXAMPLE 3: Basic usage of function fuzzy.Clusters
+##
 ## Fuzzy-logic analysis of clusters selected by the researcher, and friendly output:
 
+data(amphib)
+macoquires <- macoqui(amphib)
 grupos <- c(12,1,12,2,13,1,13,2,15,1,10,1,10,2,17,2)
 fuzzyres <- fuzzy.Clusters(macoquires, grupos)
 ver.matRmacoqui(fuzzyres)
 
-
+## EXAMPLE 4: Basic usage of function locCorotGrupos
+##
 ## Parameters for cluster mapping, and friendly output:
 
-fuzzyres <- locCorotGrupos(fuzzyres, grupos)
-ver.matRmacoqui(fuzzyres)
+data(amphib)
+macoquires <- macoqui(amphib)
+grupos <- c(12,1,12,2,13,1,13,2,15,1,10,1,10,2,17,2)
+fuzzyres <- fuzzy.Clusters(macoquires, grupos)
+fuzzylocs <- locCorotGrupos(fuzzyres, grupos)
+ver.matRmacoqui(fuzzylocs)
+
 }
