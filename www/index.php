@@ -55,9 +55,10 @@ The method for <b>chorotype identification</b> was later enhanced by Mu&ntilde;o
 <i>RMacoqui</i> outputs are also useful as the basis for delimiting <b>biogeographic regions</b> and <b>transition zones</b> with the support of fuzzy logic (Olivero et al. 2013).
 </p>
 
+<br />
 
 <h2>
-Install and load
+Installing, loading and using <i>RMacoqui</i>
 </h2>
 
 <p>
@@ -70,25 +71,15 @@ install.packages("RMacoqui", repos="http://R-Forge.R-project.org")
 <br />
 
 <p>
-This should work if you have the <b>latest version of R</b>; otherwise, it may either fail (producing a message like "<i>package 'RMacoqui' is not available for your R version</i>") or install an older version of <i>RMacoqui</i>. To <b>check the version that you have actually installed</b>, type <big><b><code>citation(package="RMacoqui")</code></b></big>.
-</p>
+This should work if you have the <b>latest version of R</b>; otherwise, it may either fail (producing a message like "<i>package 'RMacoqui' is not available for your R version</i>") or install an older version of <i>RMacoqui</i> -- you can check the version that you have actually installed by typing <big><b><code>citation(package="RMacoqui")</code></b></big>. To make sure you install the latest <i>RMacoqui</i> version, you can either upgrade R <i>or</i> download the compressed <b>package source files</b> to your disk (<i>.zip</i> for Windows or <i>.tar.gz</i> for Linux and Mac, available <a href="http://r-forge.r-project.org/R/?group_id=2103">here</a>) and then install the package from the disk, e.g. with R menu "<i>Packages - Install packages from local zip files</i>" (Windows), or "<i>Packages & Data - Package installer, Packages repository - Local source package</i>" (Mac), or "<i>Tools - Install packages - Install from: Package Archive File</i>" (RStudio).</p>
 
 <p>
-You only need to install (each version of) the package once, but then every time you re-open R you need to <strong>load</strong> the package by typing:
+Here's a <big><b><a href="RMacoqui-manual.pdf">reference manual</a></b></big> based on the package help files, and a very <big><b><a href="RMacoqui-tutorial.pdf">quick tutorial</a></b></big> of the package; a more detailed one is in preparation.
 </p>
-<code>
-library(RMacoqui)
-</code>
+
+<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
+
 <br />
-
-<p>
-You can then check out the package <strong>help</strong> files and try some of the provided <strong>examples</strong>:
-</p>
-<code>
-help("RMacoqui")
-</code>
-<br /><br />
-
 
 <h2> References </h2>
 
@@ -125,15 +116,6 @@ Real R., Olivero J., Vargas J.M. (2008) Using chorotypes to deconstruct biogeogr
 <p>
 Real R., Vargas J.M., Guerrero J.C. (1992) An&aacute;lisis biogeogr&aacute;fico de clasificaci&oacute;n de &aacute;reas y especies. <i>Monograf&iacute;as de Herpetolog&iacute;a</i> 2:73-84.
 </p>
-
-
-<h2>Further information</h2>
-
-<p>
-Here's a <big><b><a href="RMacoqui-manual.pdf">reference manual</a></b></big> based on the package help files. An illustrated step-by-step tutorial is in preparation and will be available here soon.
-</p>
-
-<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
 </body>
 </html>
