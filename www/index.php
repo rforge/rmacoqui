@@ -74,7 +74,7 @@ install.packages("RMacoqui", repos="http://R-Forge.R-project.org")
 This should work if you have the <b>latest version of R</b>; otherwise, it may either fail (producing a message like "<i>package 'RMacoqui' is not available for your R version</i>") or install an older version of <i>RMacoqui</i> -- you can check the version that you have actually installed by typing <big><b><code>citation(package="RMacoqui")</code></b></big>. To make sure you install the latest <i>RMacoqui</i> version, you can either upgrade R <i>or</i> download the compressed <b>package source files</b> to your disk (<i>.zip</i> for Windows or <i>.tar.gz</i> for Linux and Mac, available <a href="http://r-forge.r-project.org/R/?group_id=2103">here</a>) and then install the package from the disk, e.g. with R menu "<i>Packages - Install packages from local zip files</i>" (Windows), or "<i>Packages & Data - Package installer, Packages repository - Local source package</i>" (Mac), or "<i>Tools - Install packages - Install from: Package Archive File</i>" (RStudio).</p>
 
 <p>
-Here's a <big><b><a href="RMacoqui-manual.pdf">reference manual</a></b></big> based on the package help files, and a very <big><b><a href="RMacoqui-tutorial.pdf">quick tutorial</a></b></big> of the package; a more detailed one is in preparation.
+Here's a <big><b><a href="RMacoqui-manual.pdf">reference manual</a></b></big> based on the package help files, and a very <big><b><a href="RMacoqui-tutorial.html">quick tutorial</a></b></big> of the package; a more detailed one is in preparation.
 </p>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
