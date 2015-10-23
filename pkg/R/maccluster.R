@@ -5,7 +5,8 @@ function(mprox, tmatriz=1, metodoclust=3, ifail=-1){
   iwk  <- array(0, dim=c(2*nvar)); iord <- array(0, dim=c(nvar));
   cd   <- array(0, dim=c(nvar-1)); dord <- array(0, dim=c(nvar));
   mdist<-mprox2mclus(mprox, tmatriz)
-   
+  for (i in 1:length(mdist)) mdist[i] <-max(mdist[i],0)
+  
   ccluster = .Fortran("macocluster", as.integer(metodoclust), as.integer(nvar),
                                        as.double(mdist),ilc=as.integer(ilc),
                                        iuc=as.integer(iuc),cd=as.double(cd), 
